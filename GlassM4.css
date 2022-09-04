@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Signika+Negative&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+div.first-section{
+    background: rgba(88,98,183,255);
+    width: 100%;
+}
+div.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+span{
+    font-size: 2rem;
+    color: #f0320c;
+}
+.nav-links ul{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.nav-links ul li{
+    list-style: none;
+}
+.nav-links ul li a{
+    padding: 1rem;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+.nav-links ul li :hover{
+    opacity: 0.4;
+}
+.nav-links ul li:active{
+    opacity: 0.4;
+}
+.logo,.nav-links a,button,.content-box{
+    color: white;
+}
+a,button{
+    cursor: pointer;
+}
+button{
+    width: 8rem;
+    padding: 9px 12px;
+    border: 0;
+    outline: none;
+    border-radius: 15px;
+    background:linear-gradient(to right,#810eec,#f0320c);
+}
+div.content-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0.5rem;
+}
+h1.freelance{
+    font-size: 3rem;
+}
+h1.freelance,.content-lorem{
+    padding-bottom: 1rem;
+}
+div.mid-section{
+    background:linear-gradient(to right,#abe4f6ef,#8c99ef);
+    height: 50vh;
+    padding:2rem 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+img{
+    width: 12rem;
+    border-radius: 10px 60px 30px 40px;
+    margin-left: 3rem;
+}
+div.about-me{
+    width: 18rem;
+    height:16rem;
+    background-color: #ddedfd;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 3px rgba(29, 27, 27, 0.966);
+}
+.head-about{
+    color:#0e2b47b9 ;
+}
+div.last-section{
+    background:url("africangirl.jpg") no-repeat center center/cover;
+    text-align: center;
+    padding: 2rem;
+    padding-bottom:3rem;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem 1.5rem;
+    padding-top: 2rem;
+}
+h6,h4{
+    font-size: 25px;
+}
+#p1,#p2,#p3{
+    padding: 1rem 0;
+}
+#last-head,#last-p{
+    color: white;
+}
+.branding,.photography,.design{
+    background-color:#bad5ed;
+    border-radius: 15px;
+    opacity: 0.8;
+    width:12rem;
+    height: 15rem;
+    padding: 1rem;
+}
+
+/* responsiveness for mobile */
+
+@media (max-width: 320px){
+    nav{
+        display: none;
+    }
+    button{
+        width: 6rem;
+    }
+    div.mid-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        gap: 1rem;    
+    }
+    .flexbox{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* for iphones 6/7/8/xr */
+@media (min-width:375px) {
+    nav{
+        display: none;
+    }
+    button{
+        width: 6rem;
+    }
+    div.mid-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        gap: 1rem;    
+    }
+    .flexbox{
+        display: flex;
+        flex-direction: column;
+    }
+}
