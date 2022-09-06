@@ -125,7 +125,7 @@ h6,h4{
 /* responsiveness for mobile */
 
 @media (max-width: 320px){
-    nav{
+    .nav-links{
         display: none;
     }
     button{
